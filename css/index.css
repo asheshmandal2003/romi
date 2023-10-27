@@ -1,0 +1,166 @@
+.navbar {
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+.navbar-link:hover {
+  color: #999;
+}
+.sidebar {
+  transition: 0.2s ease-out;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.btn {
+  border-radius: 4px;
+  transition: 0.2s ease-out;
+}
+.btn:hover {
+  box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.2);
+}
+.btn-success {
+  background-color: rgb(53, 179, 137);
+}
+.btn-success:hover {
+  background-color: rgb(20, 66, 51);
+}
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+.logo {
+  font-size: 20px;
+}
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+.ethereum-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+.icon {
+  font-size: 25px;
+}
+.heading {
+  font-size: 53px;
+}
+.description {
+  font-size: 20px;
+}
+.launch-exchange-btn {
+  width: fit-content;
+}
+.card {
+  outline: 1px solid #999;
+}
+.info-card,
+.benifit {
+  width: 30%;
+}
+.info-img {
+  width: 60px;
+  height: 60px;
+}
+.benifit-img,
+.token-img {
+  width: 40px;
+  height: 40px;
+}
+.token-card {
+  width: 49%;
+}
+.info-card,
+.token-card {
+  border-radius: 5px;
+  border: 1px solid #555;
+  box-shadow: 0px 2px 25px rgba(255, 255, 255, 0.2);
+}
+.tokens-heading {
+  font-size: 36px;
+}
+.social-icon {
+  font-size: 28px;
+  color: rgb(150, 150, 150);
+  transition: 0.2s ease-out;
+}
+.social-icon:hover {
+  color: #fff;
+}
+.footer-link {
+  text-decoration: none;
+  color: lightgray;
+  transition: 0.2s ease-out;
+}
+.footer-link:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo {
+    font-size: 10px;
+  }
+  .logo-img {
+    width: 25px;
+    height: 25px;
+  }
+  .sidebar-item {
+    transition: 0.3s ease-out;
+  }
+  .sidebar-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .nav-link {
+    margin-left: 25px;
+  }
+  .hide,
+  .wallet-icon {
+    display: none;
+  }
+  .ethereum-logo {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+  .side-item {
+    font-size: 12px;
+    margin: 2px;
+  }
+  .more-icon {
+    font-size: 18px;
+  }
+  .heading {
+    font-size: 45px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .card-container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .info-card,
+  .benifit {
+    width: 90%;
+  }
+  .info-img {
+    width: 35px;
+    height: 35px;
+  }
+  .token-card {
+    width: auto;
+  }
+  .token-btns {
+    flex-direction: column;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>ROMI | Decentralize Perpetual Exchange</title>
+  </head>
+  <body class="bg-black text-light">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid p-0">
+        <ion-icon
+          name="menu-outline"
+          class="navbar-toggler align-start menu-icon fs-3 text-light"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none; cursor: pointer"
+        ></ion-icon>
+        <a class="nav-link me-auto logo d-flex align-items-center ms-0" href="#"
+          ><img src="/images/New Logo.png" class="logo-img" alt="logo" />
+          ROMI.Finance</a
+        >
+        <div
+          class="offcanvas offcanvas-start sidebar"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a
+              class="navbar-brand d-flex align-items-center text-light"
+              id="offcanvasNavbarLabel"
+              style="cursor: pointer"
+            >
+              <img
+                src="/images/New Logo.png"
+                alt=""
+                height="40px"
+                width="40px"
+              />ROMI.Finance
+            </a>
+            <ion-icon
+              name="close-outline"
+              data-bs-dismiss="offcanvas"
+              class="fs-3 text-light"
+              style="cursor: pointer"
+            ></ion-icon>
+          </div>
+          <div class="offcanvas-body p-0">
+            <ul class="navbar-nav text-light gap-md-1 ms-md-auto me-md-auto">
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Home</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Dashboard</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">NFT</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Earn</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Buy</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Referrals</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Ecosystem</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="navbar-nav gap-md-3 d-flex flex-row side-items me-3">
+          <li class="nav-item">
+            <button class="btn btn-success side-item">Trade</button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="btn btn-outline-light d-flex justify-content-center align-items-center side-item"
+            >
+              <ion-icon
+                name="wallet-outline"
+                class="icon wallet-icon me-2"
+              ></ion-icon
+              >Connect <span class="hide ms-1">Wallet</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="btn btn-outline-light d-flex align-items-center side-item"
+            >
+              <img
+                src="/images/download.png"
+                alt="etheremu logo"
+                class="ethereum-logo me-1"
+              />
+              <span class="vr"></span>
+              <ion-icon
+                name="ellipsis-vertical"
+                class="icon more-icon"
+              ></ion-icon>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="p-3 mt-5 mb-5">
+      <div class="col-md-6 d-flex flex-column justify-content-center p-sm-4">
+        <h1 class="heading mb-3">
+          Decentralized <br />
+          Perpetual Exchange
+        </h1>
+        <p class="description mb-4">
+          Trade BTC, ETH, AVAX and other top <br />
+          cryptocurrencies with up to 30x leverage <br />
+          directly from your wallet
+        </p>
+        <button class="btn btn-success launch-exchange-btn">
+          Launch Exchange
+        </button>
+      </div>
+    </div>
+    <div
+      class="card-container d-flex flex-wrap justify-content-center gap-4 mb-5"
+    >
+      <div
+        class="info-card p-4 d-flex flex-row align-items-center gap-4 bg-black text-light"
+      >
+        <img class="info-img" src="/images/ic_trading.2c53815a.svg" />
+        <div class="info">
+          <span>Total Trading Volume</span>
+          <h3>$0</h3>
+        </div>
+      </div>
+      <div
+        class="info-card p-4 d-flex flex-row align-items-center gap-4 bg-black text-light"
+      >
+        <img class="info-img" src="/images/ic_stats.f0a18011.svg" />
+        <div class="info">
+          <span>Open Interest</span>
+          <h3>$0</h3>
+        </div>
+      </div>
+      <div
+        class="info-card p-4 d-flex flex-row align-items-center gap-4 bg-black text-light"
+      >
+        <img class="info-img" src="/images/ic_totaluser.ae09b310.svg" />
+        <div class="info">
+          <span>Total Users</span>
+          <h3>0</h3>
+        </div>
+      </div>
+    </div>
+    <hr class="mb-5" />
+    <div class="benifits d-flex flex-wrap justify-content-center gap-md-5 mb-5">
+      <div class="p-4 benifit">
+        <div class="info d-flex align-items-center gap-3 mb-2">
+          <img class="benifit-img" src="/images/ic_liquidity.505b3f30.svg" />
+          <h5>Reduce Liquidation Risks</h5>
+        </div>
+        <p class="benifit-desc">
+          An aggregate of high-quality price feeds determine when liquidations
+          occur. This keeps positions safe from temporary wicks.
+        </p>
+      </div>
+      <div class="p-4 benifit">
+        <div class="info d-flex align-items-center gap-3 mb-2">
+          <img class="benifit-img" src="/images/ic_cost.b4a729d3.svg" />
+          <h5>Save on Costs</h5>
+        </div>
+        <p class="benifit-desc">
+          Enter and exit positions with minimal spread and zero price impact.
+          Get the optimal price without incurring additional costs.
+        </p>
+      </div>
+      <div class="p-4 benifit">
+        <div class="info d-flex align-items-center gap-md-3 mb-2">
+          <img class="benifit-img" src="/images/ic_simpleswaps.2005009f.svg" />
+          <h5>Simple Swaps</h5>
+        </div>
+        <p class="benifit-desc">
+          Open positions through a simple swap interface. Conveniently swap from
+          any supported asset into the position of your choice.
+        </p>
+      </div>
+    </div>
+    <div class="p-4">
+      <h1 class="tokens-heading mb-4">
+        Two tokens create <br />
+        our ecosystem
+      </h1>
+      <div
+        class="tokens d-flex flex-wrap justify-content-center align-items-center mb-5 gap-4"
+      >
+        <div class="token-card p-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img class="token-img" src="/images/download (1).png" />
+            <h2>$ZOMI</h2>
+          </div>
+          <p class="mb-3">
+            $ZOMI is the utility and governance token. Accrues 30% of the
+            platform's generated fees.
+          </p>
+          <p class="mb-3">Ethereum APR: 0.00%</p>
+          <div class="d-flex token-btns gap-3">
+            <button class="btn btn-success">Buy</button>
+            <button class="btn btn-outline-light">Read More</button>
+          </div>
+        </div>
+        <div class="token-card p-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img class="token-img" src="/images/download (2).png" />
+            <h2>$ZLP</h2>
+          </div>
+          <p class="mb-3">
+            $ZLP is the liquidity provider token. Accrues 70% of the platform's
+            generated fees.
+          </p>
+          <p class="mb-3">Ethereum APR: 1,650,546,938.34%</p>
+          <div class="d-flex token-btns gap-3">
+            <button class="btn btn-success">Buy</button>
+            <button class="btn btn-outline-light">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div
+      class="w-100 p-4 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="d-flex flex-row justify-content-center mb-4">
+        <img class="img-fluid" src="/images/New Logo.png" width="40" />
+        <span class="fs-2">ROMI.Finance</span>
+      </div>
+      <div class="social d-flex gap-3 mb-4">
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-x-twitter social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-medium social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-github social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-telegram social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-discord social-icon"></i
+        ></a>
+      </div>
+      <div class="d-flex footer-links gap-3 mb-4">
+        <a href="#" class="footer-link">Term and Conditions</a>
+        <a href="#" class="footer-link">Referral Team</a>
+        <a href="#" class="footer-link">Media Kit</a>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
