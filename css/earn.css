@@ -11,6 +11,7 @@
 }
 .value {
   text-decoration: underline dashed #999;
+  cursor: help;
 }
 .vest-card {
   width: 50%;

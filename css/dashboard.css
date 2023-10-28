@@ -6,6 +6,7 @@
 }
 .value {
   text-decoration: underline dashed #999;
+  cursor: help;
 }
 .zlp-index-composition {
   border-radius: 5px;

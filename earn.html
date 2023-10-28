@@ -24,6 +24,7 @@
     <title>Earn | Decentralized Perpetual Exchange | $ZOMI</title>
   </head>
   <body class="bg-black text-light">
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid p-0">
         <ion-icon
@@ -74,9 +75,32 @@
               <li class="nav-item sidebar-item p-3">
                 <a href="/dashboard.html" class="navbar-link">Dashboard</a>
               </li>
-              <li class="nav-item sidebar-item p-3">
-                <a href="#" class="navbar-link">NFT</a>
+
+              <!-- Show in computer -->
+
+              <li class="nft-drop nft-pc nav-item p-3">
+                <div class="navbar-link" style="cursor: pointer">NFT</div>
+                <!-- dropdown menu of nft -->
+                <div class="nft-drop-content bg-black text-light">
+                  <span class="drop-item p-2">Mint</span>
+                  <span class="drop-item p-2">Stake NFT</span>
+                </div>
               </li>
+
+              <!-- Show in mobile -->
+
+              <li class="nft-drop nft-mob nav-item px-3 pt-3">
+                <div class="navbar-link" style="cursor: pointer">NFT</div>
+                <div class="nft-subpoints">
+                  <span class="nav-item sidebar-item p-3 subpoint">
+                    <a href="#" class="navbar-link">Mint</a>
+                  </span>
+                  <span class="nav-item sidebar-item p-3 subpoint">
+                    <a href="#" class="navbar-link">Stake NFt</a>
+                  </span>
+                </div>
+              </li>
+
               <li class="nav-item sidebar-item p-3">
                 <a href="/earn.html" class="navbar-link">Earn</a>
               </li>
@@ -110,8 +134,9 @@
               >Connect <span class="hide ms-1">Wallet</span>
             </button>
           </li>
-          <li class="nav-item">
+          <li class="nav-item drop">
             <button
+              type="button"
               class="btn btn-outline-light d-flex align-items-center side-item"
             >
               <img
@@ -125,6 +150,42 @@
                 class="icon more-icon"
               ></ion-icon>
             </button>
+            <!-- dropdown menu -->
+            <span class="drop-content bg-black text-light">
+              <small class="text-info px-2 pt-2" style="font-size: 13px"
+                >Networks</small
+              >
+              <span
+                class="drop-item px-2 pt-2 pb-3 gap-2 d-flex align-items-center"
+                ><img
+                  src="/images/download.png"
+                  class="img-fluid"
+                  height="18"
+                  width="18"
+                  style="border-radius: 50%"
+                />
+                Ethereum</span
+              >
+              <hr class="m-0" />
+              <span
+                class="drop-item px-2 pt-2 pb-2 gap-2 d-flex align-items-center"
+                ><ion-icon
+                  name="settings-outline"
+                  class="text-info"
+                  style="font-size: 18px"
+                ></ion-icon>
+                Settings</span
+              >
+              <span
+                class="drop-item px-2 pt-2 pb-2 gap-2 d-flex align-items-center"
+                ><ion-icon
+                  name="language-outline"
+                  class="text-info"
+                  style="font-size: 18px"
+                ></ion-icon>
+                Language</span
+              >
+            </span>
           </li>
         </ul>
       </div>
@@ -151,7 +212,7 @@
               <p
                 class="value"
                 data-bs-toggle="tooltip"
-                data-bs-title="Another tooltip"
+                data-bs-title="Price on Avalanche: $..."
               >
                 $0.00
               </p>
@@ -168,13 +229,7 @@
               <p>Boost Percentage</p>
             </div>
             <div class="values text-end">
-              <p
-                class="value"
-                data-bs-toggle="tooltip"
-                data-bs-title="Another tooltip"
-              >
-                ...%
-              </p>
+              <p class="value">...%</p>
               <p class="value">$...</p>
               <p class="value">100.00%</p>
               <p class="value">...%</p>
@@ -254,13 +309,7 @@
               <p>Rewards</p>
             </div>
             <div class="values text-end">
-              <p
-                class="value"
-                data-bs-toggle="tooltip"
-                data-bs-title="Another tooltip"
-              >
-                ...%
-              </p>
+              <p class="value">...%</p>
               <p class="value">$...</p>
             </div>
           </div>
@@ -306,13 +355,7 @@
               <p>Multiplier Points APR</p>
             </div>
             <div class="values text-end">
-              <p
-                class="value"
-                data-bs-toggle="tooltip"
-                data-bs-title="Another tooltip"
-              >
-                ...%
-              </p>
+              <p class="value">...%</p>
               <p class="value">100.00%</p>
             </div>
           </div>
@@ -358,13 +401,7 @@
               <p>Claimable</p>
             </div>
             <div class="values text-end">
-              <p
-                class="value"
-                data-bs-toggle="tooltip"
-                data-bs-title="Another tooltip"
-              >
-                ...
-              </p>
+              <p class="value">...</p>
               <p>0.00 / ...</p>
               <p class="value">0.0000 / 0.0000</p>
               <p class="value">0.0000 $ZOMI</p>
@@ -389,9 +426,7 @@
               <p>Claimable</p>
             </div>
             <div class="values text-end">
-              <p data-bs-toggle="tooltip" data-bs-title="Another tooltip">
-                ...$ZLP
-              </p>
+              <p>...$ZLP</p>
               <p>0.00 / ...</p>
               <p class="value">0.0000 / 0.0000</p>
               <p class="value">0.0000 $ZOMI</p>
