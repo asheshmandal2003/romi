@@ -16,6 +16,9 @@ td,
 th {
   padding: 10px;
 }
+.currency-grid {
+  display: none;
+}
 
 @media only screen and (max-width: 1200px) {
   .stat-cards,
@@ -33,5 +36,44 @@ th {
   }
   .zlp-index-composition {
     display: none;
+  }
+  .currency-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .currency-card {
+    border-radius: 5px;
+    border: 1px solid #555;
+    box-shadow: 0px 2px 25px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .stat-cards,
+  .token-cards {
+    flex-direction: column;
+  }
+  .stat-card,
+  .token-card {
+    width: 100%;
+  }
+  .token-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .zlp-index-composition {
+    display: none;
+  }
+  .currency-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .currency-card {
+    border-radius: 5px;
+    border: 1px solid #555;
+    box-shadow: 0px 2px 25px rgba(255, 255, 255, 0.2);
   }
 }
