@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <title>Dashboard | Decentralized Perpetual Exchange | $ZOMI</title>
+  </head>
+  <body class="bg-black text-light">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid p-0">
+        <ion-icon
+          name="menu-outline"
+          class="navbar-toggler align-start menu-icon fs-3 text-light"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none; cursor: pointer"
+        ></ion-icon>
+        <a class="nav-link me-auto logo d-flex align-items-center ms-0" href="#"
+          ><img src="/images/New Logo.png" class="logo-img" alt="logo" />
+          ROMI.Finance</a
+        >
+        <div
+          class="offcanvas offcanvas-start sidebar"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a
+              class="navbar-brand d-flex align-items-center text-light"
+              id="offcanvasNavbarLabel"
+              style="cursor: pointer"
+            >
+              <img
+                src="/images/New Logo.png"
+                alt=""
+                height="40px"
+                width="40px"
+              />ROMI.Finance
+            </a>
+            <ion-icon
+              name="close-outline"
+              data-bs-dismiss="offcanvas"
+              class="fs-3 text-light"
+              style="cursor: pointer"
+            ></ion-icon>
+          </div>
+          <div class="offcanvas-body p-0">
+            <ul class="navbar-nav text-light gap-md-1 ms-md-auto me-md-auto">
+              <li class="nav-item sidebar-item p-3">
+                <a href="/" class="navbar-link">Home</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="/dashboard.html" class="navbar-link">Dashboard</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">NFT</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Earn</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Buy</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Referrals</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Ecosystem</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="navbar-nav gap-md-3 d-flex flex-row side-items me-3">
+          <li class="nav-item">
+            <button class="btn btn-success side-item">Trade</button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="btn btn-outline-light d-flex justify-content-center align-items-center side-item"
+            >
+              <ion-icon
+                name="wallet-outline"
+                class="icon wallet-icon me-2"
+              ></ion-icon
+              >Connect <span class="hide ms-1">Wallet</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="btn btn-outline-light d-flex align-items-center side-item"
+            >
+              <img
+                src="/images/download.png"
+                alt="etheremu logo"
+                class="ethereum-logo me-1"
+              />
+              <span class="vr"></span>
+              <ion-icon
+                name="ellipsis-vertical"
+                class="icon more-icon"
+              ></ion-icon>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="stats px-5 mb-5">
+      <h2 class="mt-4 mb-3 d-flex align-items-center gap-2">
+        Stats
+        <img src="/images/ethereum-eth.svg" width="30px" />
+      </h2>
+      <p class="text-secondary mb-5">
+        Ethereum Total Stats start from 06 Jan 2022. <br />
+        For detailed stats:
+      </p>
+      <div class="stat-cards d-flex gap-5">
+        <div class="stat-card">
+          <div class="p-3">Overview</div>
+          <hr class="m-0" />
+          <div class="stat-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>AUM</p>
+              <p>$ZLP Pool</p>
+              <p>24h Volume</p>
+              <p>Long Positions</p>
+              <p>Short Positions</p>
+            </div>
+            <div class="values text-end">
+              <p
+                class="value"
+                data-bs-toggle="tooltip"
+                data-bs-title="Another tooltip"
+              >
+                $34
+              </p>
+              <p class="value">$34</p>
+              <p class="value">$0</p>
+              <p class="value">$0</p>
+              <p class="value">$0</p>
+            </div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="p-3">Total Stats</div>
+          <hr class="m-0" />
+          <div class="stat-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>Total Fees</p>
+              <p>Total Volume</p>
+              <p>Floor Price Fund</p>
+            </div>
+            <div class="values text-end">
+              <p
+                class="value"
+                data-bs-toggle="tooltip"
+                data-bs-title="Another tooltip"
+              >
+                $0
+              </p>
+              <p class="value">$0</p>
+              <p class="value">$624,818</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tokens px-5 mb-5">
+      <h2 class="mt-4 mb-3 d-flex align-items-center gap-2">
+        Tokens
+        <img src="/images/ethereum-eth.svg" width="30px" />
+      </h2>
+      <p class="text-secondary mb-5">Platform and $ZLP index tokens.</p>
+      <div class="token-cards d-flex gap-5">
+        <div class="token-card d-flex">
+          <div class="token-data w-100">
+            <div class="p-3">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <img class="token-img" src="/images/download (1).png" />
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <span class="me-2">$ZOMI</span>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                  <small class="text-secondary">$ZOMI</small>
+                </div>
+              </div>
+            </div>
+            <hr class="m-0" />
+            <div class="token-body d-flex justify-content-between p-3">
+              <div class="keys">
+                <p>Price</p>
+                <p>Supply</p>
+                <p>Total Stacked</p>
+                <p>Market Cap</p>
+              </div>
+              <div class="values text-end">
+                <p
+                  class="value"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Another tooltip"
+                >
+                  $0
+                </p>
+                <p>10,000 $ZOMI</p>
+                <p class="value">$0</p>
+                <p>$10</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4">
+            <canvas id="myChart1" width="200" height="200"></canvas>
+          </div>
+        </div>
+        <div class="token-card d-flex">
+          <div class="token-data w-100">
+            <div class="p-3">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <img class="token-img" src="/images/download (2).png" />
+                <div class="d-flex flex-column">
+                  <div class="d-flex align-items-center">
+                    <span class="me-2">$ZLP</span>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </div>
+                  <small class="text-secondary">$ZLP</small>
+                </div>
+              </div>
+            </div>
+            <hr class="m-0" />
+            <div class="token-body d-flex justify-content-between p-3">
+              <div class="keys">
+                <p>Price</p>
+                <p>Supply</p>
+                <p>Total Stacked</p>
+                <p>Market Cap</p>
+                <p>Stablecoin Percentage</p>
+              </div>
+              <div class="values text-end">
+                <p data-bs-toggle="tooltip" data-bs-title="Another tooltip">
+                  $1.136
+                </p>
+                <p>29 $ZLP</p>
+                <p>$34</p>
+                <p>$34</p>
+                <p>49.50%</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4">
+            <canvas id="myChart2" width="200" height="200"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zlp-index-composition m-5 mb-5">
+      <div class="p-3">zlp-index-composition</div>
+      <hr class="m-0" />
+      <div class="p-4">
+        <table class="w-100">
+          <thead>
+            <tr class="text-secondary">
+              <td>TOKEN</td>
+              <td>PRICE</td>
+              <td>POOL</td>
+              <td>WEIGHT</td>
+              <td>UTILIZATION</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>$1,801.46</td>
+              <td class="value">$19</td>
+              <td class="value">50.49% / 25.00%</td>
+              <td>0.00%</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>$34,404.35</td>
+              <td class="value">$0</td>
+              <td class="value">0.00% / 25.00%</td>
+              <td>0.00%</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>1.37</td>
+              <td class="value">$0</td>
+              <td class="value">0.00% / 25.00%</td>
+              <td>0.00%</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>1.00</td>
+              <td class="value">$14</td>
+              <td class="value">49.50% / 25.00%</td>
+              <td>0.00%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <div
+      class="w-100 p-4 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="d-flex flex-row justify-content-center mb-4">
+        <img class="img-fluid" src="/images/New Logo.png" width="40" />
+        <span class="fs-2">ROMI.Finance</span>
+      </div>
+      <div class="social d-flex gap-3 mb-4">
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-x-twitter social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-medium social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-github social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-telegram social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-discord social-icon"></i
+        ></a>
+      </div>
+      <div class="d-flex footer-links gap-3 mb-4">
+        <a href="#" class="footer-link">Term and Conditions</a>
+        <a href="#" class="footer-link">Referral Team</a>
+        <a href="#" class="footer-link">Media Kit</a>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/js/doughnutchart.js"></script>
+  </body>
+</html>
