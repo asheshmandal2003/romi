@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css file links -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/earn.css" />
+    <title>Earn | Decentralized Perpetual Exchange | $ZOMI</title>
+  </head>
+  <body class="bg-black text-light">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid p-0">
+        <ion-icon
+          name="menu-outline"
+          class="navbar-toggler align-start menu-icon fs-3 text-light"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none; cursor: pointer"
+        ></ion-icon>
+        <a class="nav-link me-auto logo d-flex align-items-center ms-0" href="#"
+          ><img src="/images/New Logo.png" class="logo-img" alt="logo" />
+          ROMI.Finance</a
+        >
+        <div
+          class="offcanvas offcanvas-start sidebar"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <a
+              class="navbar-brand d-flex align-items-center text-light"
+              id="offcanvasNavbarLabel"
+              style="cursor: pointer"
+            >
+              <img
+                src="/images/New Logo.png"
+                alt=""
+                height="40px"
+                width="40px"
+              />ROMI.Finance
+            </a>
+            <ion-icon
+              name="close-outline"
+              data-bs-dismiss="offcanvas"
+              class="fs-3 text-light"
+              style="cursor: pointer"
+            ></ion-icon>
+          </div>
+          <div class="offcanvas-body p-0">
+            <ul class="navbar-nav text-light gap-md-1 ms-md-auto me-md-auto">
+              <li class="nav-item sidebar-item p-3">
+                <a href="/" class="navbar-link">Home</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="/dashboard.html" class="navbar-link">Dashboard</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">NFT</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="/earn.html" class="navbar-link">Earn</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Buy</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Referrals</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">Ecosystem</a>
+              </li>
+              <li class="nav-item sidebar-item p-3">
+                <a href="#" class="navbar-link">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="navbar-nav gap-md-3 d-flex flex-row side-items me-3">
+          <li class="nav-item">
+            <button class="btn btn-success side-item">Trade</button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="btn btn-outline-light d-flex justify-content-center align-items-center side-item"
+            >
+              <ion-icon
+                name="wallet-outline"
+                class="icon wallet-icon me-2"
+              ></ion-icon
+              >Connect <span class="hide ms-1">Wallet</span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="btn btn-outline-light d-flex align-items-center side-item"
+            >
+              <img
+                src="/images/download.png"
+                alt="etheremu logo"
+                class="ethereum-logo me-1"
+              />
+              <span class="vr"></span>
+              <ion-icon
+                name="ellipsis-vertical"
+                class="icon more-icon"
+              ></ion-icon>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Earn Section -->
+
+    <div class="earn px-4 mb-5">
+      <h2 class="mt-4 mb-3">Earn</h2>
+      <p class="text-secondary mb-3">Stake $ZOMI and $ZLP to earn rewards.</p>
+      <div class="earn-cards">
+        <!-- 1st card -->
+
+        <div class="earn-card">
+          <div class="p-3">$ZOMI</div>
+          <hr class="m-0" />
+          <div class="earn-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>Price</p>
+              <p>Wallet</p>
+              <p>Stacked</p>
+            </div>
+            <div class="values text-end">
+              <p
+                class="value"
+                data-bs-toggle="tooltip"
+                data-bs-title="Another tooltip"
+              >
+                $0.00
+              </p>
+              <p>... $ZOMI ($...)</p>
+              <p>... $ZOMI ($...)</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="earn-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>APR</p>
+              <p>Rewards</p>
+              <p>Multiplier Points APR</p>
+              <p>Boost Percentage</p>
+            </div>
+            <div class="values text-end">
+              <p
+                class="value"
+                data-bs-toggle="tooltip"
+                data-bs-title="Another tooltip"
+              >
+                ...%
+              </p>
+              <p class="value">$...</p>
+              <p class="value">100.00%</p>
+              <p class="value">...%</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="earn-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>Total Stacked</p>
+              <p>Total Supply</p>
+            </div>
+            <div class="values text-end">
+              <p>0 $ZOMI ($...)</p>
+              <p>10,000 $ZOMI ($10)</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="p-3">
+            <button class="btn btn-success">Buy $ZOMI</button>
+          </div>
+        </div>
+
+        <!-- 2nd Card -->
+
+        <div class="earn-card d-flex flex-column justify-content-between">
+          <span>
+            <div class="p-3">Total Rewards</div>
+            <hr class="m-0" />
+            <div class="earn-body d-flex justify-content-between p-3">
+              <div class="keys">
+                <p>ETH (WETH)</p>
+                <p>$ZOMI</p>
+                <p>Escrowed $ZOMI</p>
+                <p>Multiplier Points</p>
+                <p>Staked Multiplier Points</p>
+                <p>Total</p>
+              </div>
+              <div class="values text-end">
+                <p>... ($...)</p>
+                <p>... ($...)</p>
+                <p>... ($...)</p>
+                <p>...</p>
+                <p>...</p>
+                <p>$...</p>
+              </div>
+            </div>
+          </span>
+          <span>
+            <hr class="m-0" />
+            <div class="p-3">
+              <button class="btn btn-success">Connect Wallet</button>
+            </div>
+          </span>
+        </div>
+
+        <!-- 3rd Card -->
+
+        <div class="earn-card">
+          <div class="p-3">$ZPL (Etheremu)</div>
+          <hr class="m-0" />
+          <div class="earn-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>Price</p>
+              <p>Wallet</p>
+              <p>Stacked</p>
+            </div>
+            <div class="values text-end">
+              <p>$...</p>
+              <p>... $ZPL ($...)</p>
+              <p>... $ZPL ($...)</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="earn-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>APR</p>
+              <p>Rewards</p>
+            </div>
+            <div class="values text-end">
+              <p
+                class="value"
+                data-bs-toggle="tooltip"
+                data-bs-title="Another tooltip"
+              >
+                ...%
+              </p>
+              <p class="value">$...</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="earn-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>Total Stacked</p>
+              <p>Total Supply</p>
+            </div>
+            <div class="values text-end">
+              <p>... $ZPL ($...)</p>
+              <p>... $ZPL ($...)</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="p-3 d-flex gap-3">
+            <button class="btn btn-success">Buy $ZPL</button>
+            <button class="btn btn-success">Sell $ZPL</button>
+          </div>
+        </div>
+
+        <!-- 4th Card -->
+
+        <div class="earn-card">
+          <div class="p-3">ZOMI</div>
+          <hr class="m-0" />
+          <div class="earn-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>Price</p>
+              <p>Wallet</p>
+              <p>Stacked</p>
+            </div>
+            <div class="values text-end">
+              <p>$0.00</p>
+              <p>... esZOMI ($...)</p>
+              <p>... esZOMI ($...)</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="earn-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>APR</p>
+              <p>Multiplier Points APR</p>
+            </div>
+            <div class="values text-end">
+              <p
+                class="value"
+                data-bs-toggle="tooltip"
+                data-bs-title="Another tooltip"
+              >
+                ...%
+              </p>
+              <p class="value">100.00%</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="earn-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>Total Stacked</p>
+              <p>Total Supply</p>
+            </div>
+            <div class="values text-end">
+              <p>... esZOMI ($...)</p>
+              <p>1,023,379 esZOMI ($1,055)10,000 $ZOMI ($10)</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="p-3">
+            <button class="btn btn-success">Connect Wallet</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- vest section -->
+    <div class="vest px-4 mb-5">
+      <h2 class="mt-4 mb-3">Vest</h2>
+      <p class="text-secondary mb-5">
+        Convert esZOMI tokens to $ZOMI tokens. <br />
+        Please read the
+        <a href="#" class="text-secondary">vesting details</a> before using the
+        vaults.
+      </p>
+      <div class="vest-cards d-flex gap-5">
+        <!-- 1st vest card -->
+
+        <div class="vest-card">
+          <div class="p-3">$ZOMI Vault</div>
+          <hr class="m-0" />
+          <div class="vest-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>Stacked Tokens</p>
+              <p>Reserved for Vesting</p>
+              <p>Vesting Status</p>
+              <p>Claimable</p>
+            </div>
+            <div class="values text-end">
+              <p
+                class="value"
+                data-bs-toggle="tooltip"
+                data-bs-title="Another tooltip"
+              >
+                ...
+              </p>
+              <p>0.00 / ...</p>
+              <p class="value">0.0000 / 0.0000</p>
+              <p class="value">0.0000 $ZOMI</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="p-3">
+            <button class="btn btn-success">Connect Wallet</button>
+          </div>
+        </div>
+
+        <!-- 2nd vest card -->
+
+        <div class="vest-card">
+          <div class="p-3">$ZLP Vault</div>
+          <hr class="m-0" />
+          <div class="vest-body d-flex justify-content-between p-3">
+            <div class="keys">
+              <p>Stacked Tokens</p>
+              <p>Reserved for Vesting</p>
+              <p>Vesting Status</p>
+              <p>Claimable</p>
+            </div>
+            <div class="values text-end">
+              <p data-bs-toggle="tooltip" data-bs-title="Another tooltip">
+                ...$ZLP
+              </p>
+              <p>0.00 / ...</p>
+              <p class="value">0.0000 / 0.0000</p>
+              <p class="value">0.0000 $ZOMI</p>
+            </div>
+          </div>
+          <hr class="m-0" />
+          <div class="p-3">
+            <button class="btn btn-success">Connect Wallet</button>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+
+    <!-- footer section -->
+
+    <hr />
+    <div
+      class="w-100 p-4 d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="d-flex flex-row justify-content-center mb-4">
+        <img class="img-fluid" src="/images/New Logo.png" width="40" />
+        <span class="fs-2">ROMI.Finance</span>
+      </div>
+      <div class="social d-flex gap-3 mb-4">
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-x-twitter social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-medium social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-github social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-telegram social-icon"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i class="fa-brands fa-discord social-icon"></i
+        ></a>
+      </div>
+      <div class="d-flex footer-links gap-3 mb-4">
+        <a href="#" class="footer-link">Term and Conditions</a>
+        <a href="#" class="footer-link">Referral Team</a>
+        <a href="#" class="footer-link">Media Kit</a>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- bootstrap cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ionicons cdn -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- tooltip logic -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>

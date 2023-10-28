@@ -1,0 +1,30 @@
+.earn-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.earn-card,
+.vest-card {
+  border-radius: 5px;
+  border: 1px solid #555;
+  box-shadow: 0px 2px 25px rgba(255, 255, 255, 0.2);
+}
+.value {
+  text-decoration: underline dashed #999;
+}
+.vest-card {
+  width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .earn-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .vest-cards {
+    flex-direction: column;
+  }
+  .vest-card {
+    width: 100%;
+  }
+}
